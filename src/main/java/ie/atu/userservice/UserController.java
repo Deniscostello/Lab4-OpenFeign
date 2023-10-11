@@ -10,7 +10,7 @@ import java.util.Map;
 
 @RestController
 public class UserController {
-    private RegistrationServiceClient registrationServiceClient;
+    private final RegistrationServiceClient registrationServiceClient;
 
     @Autowired
     public UserController(RegistrationServiceClient registrationServiceClient){
